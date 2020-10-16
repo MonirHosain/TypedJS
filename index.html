@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Typed.js</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    span {
+      color: red;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <h1>Hello World. <span class="animate"></span></h1>
+    </div>
+
+    <script src="typed.js"></script>
+    <script>
+      var typed = new Typed(".animate", {
+        strings: ["THIS IS LINE ONE.", "this is line two", "This Is Line Three.", "THIS is LINE four"],
+
+        typeSpeed: 100,
+        startDelay: 0,
+        backSpeed: 60,
+        smartBackspace: true,
+        backDelay: 60,
+        loop: true,
+        loopCount: Infinity,
+        cursorChar: "|",
+      });
+    </script>
+  </body>
+</html>
